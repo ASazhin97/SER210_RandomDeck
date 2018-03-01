@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ser210_02_asazhin.ser210_randomdeck.CategoryActivity">
+
+    <TextView
+        android:id="@+id/deck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deck Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <EditText
+        android:id="@+id/deckNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Deck Name" />
+
+    <TextView
+        android:id="@+id/colorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Colors"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3">
+
+
+        <Button
+            android:id="@+id/blackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Black"
+            />
+
+        <Button
+            android:id="@+id/whiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="White"
+            />
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Green"
+            />
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="Blue"
+            />
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="Red"
+            />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Set"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/setsArray" />
+
+    <Button
+        android:id="@+id/genButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENARATE"
+        android:onClick="onGenerateClick"/>
+
+
+</LinearLayout>

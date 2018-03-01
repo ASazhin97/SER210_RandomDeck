@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SER210_RandomDeck</string>
+    <string name="welcome">Welcome!</string>
+    <string name="color1">Black</string>
+    <string-array name="setsArray">
+        <item>Legacy</item>
+        <item>Commander</item>
+        <item>Modern</item>
+    </string-array>
+</resources>
