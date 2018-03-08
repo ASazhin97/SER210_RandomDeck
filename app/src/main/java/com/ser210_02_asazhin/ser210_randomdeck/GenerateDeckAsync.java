@@ -75,6 +75,8 @@ public class GenerateDeckAsync extends AsyncTask<ArrayList<String>, Integer, Str
 //            buttonsArray[2] = (Button) findViewById(R.id.greenButton);
 //            buttonsArray[3] = (Button) findViewById(R.id.blueButton);
 //            buttonsArray[4] = (Button) findViewById(R.id.redButton);
+
+            //WHEN I ADDED THIS CODE THE ERRORS SEEM TO START HAPPENING
             int DeckSize = 40;
             if(data.get(data.size()-1).equals("Modern"))
                 DeckSize = 60;
