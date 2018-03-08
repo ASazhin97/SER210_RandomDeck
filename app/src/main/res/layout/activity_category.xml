@@ -41,6 +41,7 @@
             android:layout_column="0"
             android:layout_row="0"
             android:text="Black"
+            android:onClick="colorButtonsOnClick"
             />
 
         <Button
@@ -50,6 +51,7 @@
             android:layout_column="1"
             android:layout_row="0"
             android:text="White"
+            android:onClick="colorButtonsOnClick"
             />
 
         <Button
@@ -59,6 +61,7 @@
             android:layout_column="0"
             android:layout_row="1"
             android:text="Green"
+            android:onClick="colorButtonsOnClick"
             />
 
         <Button
@@ -68,6 +71,7 @@
             android:layout_column="1"
             android:layout_row="1"
             android:text="Blue"
+            android:onClick="colorButtonsOnClick"
             />
 
         <Button
@@ -77,6 +81,7 @@
             android:layout_column="2"
             android:layout_row="1"
             android:text="Red"
+            android:onClick="colorButtonsOnClick"
             />
 
     </GridLayout>
@@ -88,10 +93,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/setSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/setsArray" />
+        android:entries="@array/setsArray"
+        />
 
     <Button
         android:id="@+id/genButton"
